@@ -1,6 +1,8 @@
 :root {
   --paragraph-color: #757575;
   --set-card-gap: 30px;
+  --hover-color: #2196F3;
+  --no-action-color: #AFB1B8;
 }
 
 html {
@@ -11,6 +13,10 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+* {
+  outline: 1px solid red;
 }
 
 body {
@@ -138,7 +144,7 @@ img {
 
 .text-nav:hover,
 .text-nav:focus {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 
 .contacts-nav {
@@ -155,7 +161,7 @@ img {
 
 .contacts-nav:hover,
 .contacts-nav:focus {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 
 .icon {
@@ -258,6 +264,11 @@ img {
 
 .icon-values {
   background-color: #F5F4FA;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+ 
 }
 
 /*What are we doing*/
@@ -323,12 +334,61 @@ img {
 }
 
 .text-position {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   text-align: center;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
+}
+
+.social-links .link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: var(--no-action-color);
+}
+
+.social-links .link-item + .link-item {
+  margin-left: 10px;
+}
+
+.link:hover,
+.link:focus {
+  fill: #FFFFFF;
+  background-color: var(--hover-color);
+  border-radius: 50%;
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/*Our Clients*/
+
+.client-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--no-action-color);
+  border-radius: 4px;
+}
+
+.client-list {
+  display: flex;
+}
+
+.client-link .icon-clients {
+  display: flex;
+  align-items: center;
+}
+
+.icon-clients {
+  
 }
 
 /*Portfolio page*/
@@ -409,6 +469,8 @@ img {
 
   color: var(--paragraph-color);
 }
+
+
 
 /*Footer*/
 
