@@ -142,6 +142,8 @@ img {
 }
 
 .contacts-nav {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -156,6 +158,11 @@ img {
   color: #2196f3;
 }
 
+.icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .data-contacts {
   display: flex;
   margin-left: auto;
@@ -165,7 +172,6 @@ img {
   margin-left: 50px;
 }
 
-.contact
 
 /*Hero*/
 
@@ -176,7 +182,15 @@ img {
 
 .hero {
   text-align: center;
-  background-color: #2f303a;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../imeges/Img-bg-hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
 
 .hero-title {
@@ -240,6 +254,10 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--paragraph-color);
+}
+
+.icon-values {
+  background-color: #F5F4FA;
 }
 
 /*What are we doing*/
